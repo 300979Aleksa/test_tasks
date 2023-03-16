@@ -21,3 +21,13 @@ inputs = [
 ]
 
 # тут ваше решение:
+for input in inputs:
+    input_list = input.split(" ")
+    number_list = []
+    for string in input_list:
+        number_list.append(int(string))
+    number_list = [int(string) for string in input_list]
+    number_list = list(map(int, input_list))
+    a, x, b, c = number_list
+    y = a*x*x + b*x + c
+    print(y)
