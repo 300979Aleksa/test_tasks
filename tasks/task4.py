@@ -26,3 +26,13 @@ inputs = [
 ]
 
 # тут ваше решение:
+for input in inputs:
+    _, string = input
+    str_list = string.split()
+    longest_world = ''
+    for word in str_list:
+       if len(word) > len(longest_world):
+           longest_world = word
+
+    print(longest_world)
+    print(len(longest_world))

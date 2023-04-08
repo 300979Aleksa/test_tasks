@@ -19,5 +19,24 @@ inputs = [
     '10001',                           # -> True
     '123'                              # -> False
 ]
-
+##
 # тут ваше решение:
+
+#word = input () 
+
+#if str(word) == ''.join(reversed(word)):
+ #   print("Its palindrome")
+#else:
+#    print("Its not palindrome")
+
+for string in inputs:
+    new_string=[]
+    for char in string:
+        if char.isalnum():
+            new_string.append(char.lower())
+    print(new_string)
+    new_string="".join(new_string)
+    if new_string==new_string[::-1]:
+        print(True)
+    else:
+        print(False)

@@ -19,4 +19,32 @@ inputs = [
     '6 -2 0'   # -> WIN
 ]
 
+#a=in(input())
+#b=in(input())
+#c=in(input())
+
+
 # тут ваше решение:
+
+#from random import randint
+#a=randint(-10,10)
+#b=randint(-10,10)
+#c=randint(-10,10)
+#print(a,b,c)
+#if (a%2==1) and (b%2==1) and (c%2==1) or (a%2==0) and (b%2==0) and (c%2==0):
+#    print("Win")
+#else:
+#    print("Fale")
+for input in inputs:
+    number_list = input.split()
+    values = list(map(int, number_list))
+    n=0
+    enum_nambers=0
+    for value in values:
+        if value %2==0:
+            enum_nambers+=1
+        n+=1
+    if (enum_nambers==n or enum_nambers==0):
+        print('win')
+    else:
+        print('fail')
